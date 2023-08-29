@@ -1,0 +1,112 @@
+body{
+    font-family:monospace;
+    background-color: #fff7d4;
+}
+p{
+    font-size: 30px;
+    margin: 10 auto;
+    text-align: center;
+}
+.calc-container{
+    display:grid;
+    margin: 10px auto;
+    border: solid black 2px;
+    padding: 5px;
+    height: 500px;
+    width: 400px;
+    background-color: #C07F00; 
+    /* change later */
+}
+.display{
+    display: flex;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    height: 100px;
+    border: solid black 2px;
+    background-color:  rgb(245, 232, 163);
+    flex-direction: column;
+}
+.upper-display, .lower-display{
+    height: 45px;
+    width: 370px;
+    padding: 5px;
+    border: #4C3D3D solid 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lower-display{
+    font-weight: 600;
+    color: #4C3D3D;
+    font-size: 50px;
+    text-align: end;
+}
+.upper-display{
+    color: gray;
+    font-size: 30px;
+    text-align: start;
+
+}
+.body{
+    display: flex;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    height: 350px;
+    border: solid black 2px;
+    background-color: rgb(245, 232, 163);
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.numbers{
+    display: flex;
+    float: left;
+    width: 230px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin: 0 px;
+    flex-direction: row; 
+
+}
+.operators{
+    display: flex;
+    float: right;
+    width: 140px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 0;
+    flex-direction: row;
+}
+.normal-ops{
+    display:flex;
+    float:left;
+    flex-direction: column; 
+    justify-content: space-around;
+}
+.special-ops{
+    display:flex;
+    float:right;
+    flex-direction: column; 
+    justify-content: space-around;
+}
+
+button{
+    background-color: #4C3D3D;
+    color: #fff7d4;
+    font-size: 55px;
+    margin: 5px;
+    padding: 0 5px;
+    width: 60px;
+    flex-grow: 1;
+    border: #fff7d4 solid 1px;
+    border-radius: 5px;
+}
+ .long-btn{
+    height:100px;
+    flex-grow: 1;
+ }
+#a-c{
+    font-size: 55px;
+    margin: 0;
+    padding: 0;
+}
+.point{
+    flex-grow: 0;
+}
